@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/Logo-Fav-Rp-Manager.png">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>RP-Mananger</title>
+</head>
+<body>
+    <header><nav><a href="../inicio/index.html">
+        <img src="img/Logo-Site-Rp-Manager.png" class="logo" alt="RP-Mananger">
+        <h2>RP-Mananger</h2>
+    </a>
+    <a href="../comandos/index.html">
+        <h3>Comandos</h3>
+    </a>
+    <a href="https://discord.com/oauth2/authorize?client_id=878702143811502112&scope=bot&permissions=2048" target="_blank">
+        <h3>Convide</h3>
+    </a>
+    <a href="../apoie/index.html">
+        <h3>Apoie</h3>
+    </a>
+    </nav></header>
+    <div class="title"><h1>Apoie o RP-Manager</h1></div>
+    <section class="home">
+        <div>
+            <h2>O bot RP-Mananger é de graça para todos os servidores.</h2><br>
+            <h3>Somos patrocinados apenas por doações dos nossos usuários.</h3>
+            <p>Por enquanto, apenas recebemos doações brasileiras usando o PIX.</p>
+            <nav>
+                <a class="button" onclick="setDonation('donation5')">
+                    <h3>R$ 5,00</h3>
+                </a>
+                <a class="button" onclick="setDonation('donation15')">
+                    <h3>R$ 15,00</h3>
+                </a>
+                <a class="button" onclick="setDonation('donationOth')">
+                    <h3>Outro valor</h3>
+                </a>
+            </nav>  
+        </div>
+    </section>
+    <section id="donation5">
+        <h2>Doe R$ 5,00</h2>
+        <h3>Escaneie o código abaixo para doar</h3>
+        <div class="qr">
+            <img src="./img/PixDoaçãoRP-Manager-R$5,00.png" alt="">
+        </div>
+        <h2>Ou</h2>
+        <h3>Use a chave copia e cola</h3>
+        <a class="copyAndPast" onclick="copyAndPast(1)">2278caaf-8210-4d42-943c-6114ce4aa2fc</a>
+        <a class="copied">Copiado</a>
+    </section>
+    <section id="donation15">
+        <h2>Doe R$ 15,00</h2>
+        <h3>Escaneie o código abaixo para doar</h3>
+        <div class="qr">
+            <img src="./img/PixDoaçãoRP-Manager-R$15,00.png" alt="">
+        </div>
+        <h2>Ou</h2>
+        <h3>Use a chave copia e cola</h3>
+        <a class="copyAndPast" onclick="copyAndPast(2)">2278caaf-8210-4d42-943c-6114ce4aa2fc</a>
+        <a class="copied">Copiado</a>
+    </section>
+    <section id="donationOth">
+        <h2>Doe um valor personalizado</h2>
+        <h3>Escaneie o código abaixo para doar</h3>
+        <div class="qr">
+            <img src="./img/PixDoaçãoRP-Manager-Outro.png" alt="">
+        </div>
+        <h2>Ou</h2>
+        <h3>Use a chave copia e cola</h3>
+        <a class="copyAndPast" onclick="copyAndPast(3)">2278caaf-8210-4d42-943c-6114ce4aa2fc</a>
+        <a class="copied">Copiado</a>
+    </section>
+</body>
+<script>
+    document.getElementById("donation5").style.display = "none"
+    document.getElementById("donation15").style.display = "none"
+    document.getElementById("donationOth").style.display = "none"
+</script>
+<script src="./js/script.js"></script>
+</html>

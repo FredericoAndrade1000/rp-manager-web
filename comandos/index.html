@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/Logo-Fav-Rp-Manager.png">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Comandos do RP-Mananger</title>
+</head>
+<body>
+    <header><nav><a href="../inicio/index.html">
+        <img src="img/Logo-Site-Rp-Manager.png" class="logo" alt="RP-Mananger">
+        <h2>RP-Mananger</h2>
+    </a>
+    <a href="../comandos/index.html">
+        <h3>Comandos</h3>
+    </a>
+    <a href="https://discord.com/oauth2/authorize?client_id=878702143811502112&scope=bot&permissions=2048" target="_blank">
+        <h3>Convide</h3>
+    </a>
+    <a href="../apoie/index.html">
+        <h3>Apoie</h3>
+    </a>
+    </nav></header>
+    <div class="title"><h1>Comandos</h1></div>
+    <section>
+        <div>
+            <h2>Prefixo:</h2>
+            <p>Padrão: <code>=</code></p>
+            <p>Exemplo de uso: <code>=ajuda</code></p>
+            <br>
+            <p>Me mencione se o prefixo em seu servidor for personalizado: <code>@RP-Mananger</code></p>
+        </div>
+    </section>
+    <section>
+        <nav>
+            <h2>Lista de comandos resumidos:</h2>    <!--
+        <a href="">
+            <h3>Todos</h3>
+        </a>
+        <a href="">
+            <h3>Missões</h3>
+        </a>
+        <a href="">
+            <h3>Configurações</h3>
+        </a>                               -->
+        </nav>
+        <div>
+            <div class="commDiv">
+                <p><code>calcule-lançamento</code> - Calcula o valor de recompensa de lançamentos individuais. <a onclick="scr('cmd01')">Ver mais</a></p>
+            </div>
+        </div>
+        <div>
+            <div class="commDiv">
+                <p><code>calcule-missão</code> - Calcula o valor de recompensa de cumprimento de missão. <a onclick="scr('cmd02')">Ver mais</a></p>
+            </div>
+        </div>
+        <div>
+            <div class="commDiv">
+                <p><code>calcule-criador</code> - Calcula o valor da recompensa dada aos criadores de missão. <a onclick="scr('cmd03')">Ver mais</a></p>
+            </div>
+        </div>
+        <div>
+            <div class="commDiv">
+                <p><code>definir-nível</code> - Cria ou edita um nível e suas quantias. <a onclick="scr('cmd04')">Ver mais</a></p>
+            </div>
+        </div>
+        <div>
+            <div class="commDiv">
+                <p><code>mostrar-níveis</code> - Mostra todos os níveis criados. <a onclick="scr('cmd05')">Ver mais</a></p>
+            </div>
+        </div>
+        <div>
+            <div class="commDiv">
+                <p><code>remover-nível</code> - Remove o nível selecionado. Redefine a ordem dos subsequentes. <a onclick="scr('cmd06')">Ver mais</a></p>
+            </div>
+        </div>
+        <div>
+            <div class="commDiv">
+                <p><code>definir-prefíxo</code> - Define um prefixo personalizado do bot para o servidor. <a onclick="scr('cmd07')">Ver mais</a></p>
+            </div>
+        </div>
+        <div>
+            <div class="commDiv">
+                <p><code>adicionar-missão</code> - Cria uma nova missão. Use "&" para separar argumentos. <a onclick="scr('cmd08')">Ver mais</a></p>
+            </div>
+        </div>
+        <div>
+            <div class="commDiv">
+                <p><code>mostrar-missões</code> - Mostra todas as missões criadas. <a onclick="scr('cmd09')">Ver mais</a></p>
+            </div>
+        </div>
+        <div>
+            <div class="commDiv">
+                <p><code>remover-missão</code> - Remove a missão selecionada e redefine a ordem das missões subsequentes. <a onclick="scr('cmd10')">Ver mais</a></p>
+            </div>
+        </div>
+        <div>
+            <div class="commDiv">
+                <p><code>postar-missão</code> - Posta no canal definido a missão selecionada. <a onclick="scr('cmd11')">Ver mais</a></p>
+            </div>
+        </div>
+        <div>
+            <div class="commDiv">
+                <p><code>definir-canal-missões</code> - Define o canal onde serão postadas as missões. <a onclick="scr('cmd12')">Ver mais</a></p>
+            </div>
+        </div>
+        <div>
+            
+            <div class="commDiv">
+                <p><code>definir-cargo-gerenciador</code> - Define o cargo que pode usar alguns comandos específicos. <a onclick="scr('cmd13')">Ver mais</a></p>
+            </div>
+        </div>
+    </section>
+    <section id="last">
+        <nav>
+            <h2>Lista de comandos detalhados:</h2>
+        </nav>
+        <div>
+            <div id="cmd01" class="commDiv">
+                <p>Sintaxe: <code>calcule-lançamento [massa] [reutilizável(s/n)] [dificuldade(1 a 6)]</code></p>
+                <p>Exemplo de uso: <code>calcule-lançamento 578.83 s 3</code></p>
+                <p class="description">Descrição: Calcula o valor de recompensa de lançamentos individuais.</p>
+            </div>
+        </div>
+        <div>
+            <div id="cmd02" class="commDiv">
+                <p>Sintaxe: <code>calcule-missão [massa] [reutilizável(s/n)] [dificuldade(1 a 6)]</code></p>
+                <p>Exemplo de uso: <code>calcule-lançamento 433.71 s 1</code></p>
+                <p class="description">Descrição: Calcula o valor de recompensa de cumprimento de missão.</p>
+            </div>
+        </div>
+        <div>
+            <div id="cmd03" class="commDiv">
+                <p>Sintaxe: <code>calcule-criador [número de concluíntes] [dificuldade(1 a 6)]</code></p>
+                <p>Exemplo de uso: <code>calcule-criador 3 2</code></p>
+                <p class="description">Descrição: Calcula o valor da recompensa dada aos criadores de missão.</p>
+            </div>
+        </div>
+        <div>
+            <div id="cmd04" class="commDiv">
+                <p>Sintaxe: <code>definir-nível [nível] [ganho do lançamento] [ganho do missão] [ganho do criador] [custo por tonelada]</code></p>
+                <p>Exemplo de uso: <code>definir-nível 1 35000 58000 23000 15</code></p>
+                <p class="description">Descrição: Cria ou edita um nível e suas quantias.</p>
+            </div>
+        </div>
+        <div>
+            <div id="cmd05" class="commDiv">
+                <p>Sintaxe: <code>mostrar-níveis</code></p>
+                <p>Exemplo de uso: <code>mostrar-níveis</code> (não necessita de argumentos)</p>
+                <p class="description">Descrição: Mostra todos os níveis criados.</p>
+            </div>
+        </div>
+        <div>
+            <div id="cmd06" class="commDiv">
+                <p>Sintaxe: <code>remover-nível [número do nível]</code></p>
+                <p>Exemplo de uso: <code>remover-nível 3</code></p>
+                <p class="description">Descrição: Remove o nível selecionado e redefine a ordem dos subsequentes.</p>
+            </div>
+        </div>
+        <div>
+            <div id="cmd07" class="commDiv">
+                <p>Sintaxe: <code>definir-prefixo [prefixo]</code></p>
+                <p>Exemplo de uso: <code>definir-prefixo =</code></p>
+                <p class="description">Descrição: Define um prefixo personalizado do bot para o servidor.</p>
+            </div>
+        </div>
+        <div>
+            <div id="cmd08" class="commDiv">
+                <p>Sintaxe: <code>adicionar-missão [título] & [descrição] & [objetivo] & [nível] & [notas] & [proibições] & [prazo de entrega]</code></p>
+                <p>Exemplo de uso: <code>adicionar-missão Sputnik-1 & Depois de se ver perdendo espaço em uma disputa, o governo da URSS quer enviar algo para o espaço & Lançe um satélite que represente a Sputnik-1 na órbita da Terra & 1 & O foguete deve se parecer com o Semiorka & Uso de Cheats ou edições dos arquivos do jogo & 04/10/2021</code></p>
+                <p class="description">Descrição: Cria uma nova missão. Use "&" para separar argumentos.</p>
+            </div>
+        </div>
+        <div>
+            <div id="cmd09" class="commDiv">
+                <p>Sintaxe: <code>mostrar-missões</code></p>
+                <p>Exemplo de uso: <code>mostrar-missões</code> (não necessita de argumentos)</p>
+                <p class="description">Descrição: Mostra todas as missões criadas.</p>
+            </div>
+        </div>
+        <div>
+            <div id="cmd10" class="commDiv">
+                <p>Sintaxe: <code>remover-missão [número da missão]</code></p>
+                <p>Exemplo de uso: <code>remover-missão 5</code></p>
+                <p class="description">Descrição: Remove a missão selecionada e redefine a ordem das missões subsequentes.</p>
+            </div>
+        </div>
+        <div>
+            <div id="cmd11" class="commDiv">
+                <p>Sintaxe: <code>postar-missão [número da missão]</code></p>
+                <p>Exemplo de uso: <code>postar-missão 2</code></p>
+                <p class="description">Descrição: Posta no canal definido a missão selecionada.</p>
+            </div>
+        </div>
+        <div>
+            <div id="cmd12" class="commDiv">
+                <p>Sintaxe: <code>definir-canal-missões [ID do canal]</code></p>
+                <p>Exemplo de uso: <code>definir-canal-missões 704000741915754530</code></p>
+                <p class="description">Descrição: Define o canal onde serão postadas as missões.</p>
+            </div>
+        </div>
+        <div>
+            <div id="cmd13" class="commDiv">
+                <p>Sintaxe: <code>definir-cargo-gerenciador [nome do cargo]</code></p>
+                <p>Exemplo de uso: <code>definir-cargo-gerenciador Administrador</code></p>
+                <p class="description">Descrição: Define o cargo que pode usar alguns comandos específicos.</p>
+            </div>
+        </div>
+    </section>
+</body>
+<script src="./js/script.js"></script>
+</html>
