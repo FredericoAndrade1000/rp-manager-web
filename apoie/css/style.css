@@ -101,6 +101,14 @@ a:visited{
     margin-right: 10px;
     border-radius: 10px;
 }
+.button:hover{
+    background-color: #37428b;
+    -webkit-transition: background-color 0.3s;
+    -moz-transition: background-color 0.3s;
+    -o-transition: background-color 0.3s;
+    -ms-transition: background-color 0.3s;
+    transition: background-color 0.3s;
+}
 .button h3{
     margin: 0;
 }
