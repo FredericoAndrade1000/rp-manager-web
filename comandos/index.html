@@ -108,9 +108,23 @@
             </div>
         </div>
         <div>
-            
             <div class="commDiv">
                 <p><code>definir-cargo-gerenciador</code> - Define o cargo que pode usar alguns comandos específicos. <a onclick="scr('cmd13')">Ver mais</a></p>
+            </div>
+        </div>
+        <div>
+            <div class="commDiv">
+                <p><code>registrar-agência</code> - Registra uma agência para o usuário. Use & para separar argumentos. <a onclick="scr('cmd14')">Ver mais</a></p>
+            </div>
+        </div>
+        <div>
+            <div class="commDiv">
+                <p><code>agência</code> - Mostra informações sobre a agência do usuário.<a onclick="scr('cmd15')">Ver mais</a></p>
+            </div>
+        </div>
+        <div>
+            <div class="commDiv">
+                <p><code>remover-agência</code> - Remove permanentemente a agência do usuário.<a onclick="scr('cmd16')">Ver mais</a></p>
             </div>
         </div>
     </section>
@@ -219,7 +233,31 @@
                 <p>Sintaxe: <code>definir-cargo-gerenciador [nome do cargo]</code></p>
                 <p>Exemplo de uso: <code>definir-cargo-gerenciador Administrador</code></p>
                 <p class="description">Descrição: Define o cargo que pode usar alguns comandos específicos.</p>
-                <p>Nível de permissão de servidor requerido: 1</p>
+                <p>Nível de permissão de servidor requerido: 2</p>
+            </div>
+        </div>
+        <div>
+            <div id="cmd14" class="commDiv">
+                <p>Sintaxe: <code>registrar-agência [nome] & [descrição]</code></p>
+                <p>Exemplo de uso: <code>registrar-agência Red Shift Nebular & Sempre fazendo um "desvio"</code></p>
+                <p class="description">Descrição: Registra uma agência para o usuário. Use & para separar argumentos.</p>
+                <p>Nível de permissão de servidor requerido: 2</p>
+            </div>
+        </div>
+        <div>
+            <div id="cmd15" class="commDiv">
+                <p>Sintaxe: <code>agência</code></p>
+                <p>Exemplo de uso: <code>agência</code> (não necessita de argumentos)</p>
+                <p class="description">Mostra informações sobre a agência do usuário.</p>
+                <p>Nível de permissão de servidor requerido: 2</p>
+            </div>
+        </div>
+        <div>
+            <div id="cmd16" class="commDiv">
+                <p>Sintaxe: <code>remover-agência [confirmar remoção]</code></p>
+                <p>Exemplo de uso: <code>remover-agência confirmar remoção</code></p>
+                <p class="description">Descrição: Remove permanentemente a agência do usuário..</p>
+                <p>Nível de permissão de servidor requerido: 2</p>
             </div>
         </div>
     </section>
