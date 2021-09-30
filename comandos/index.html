@@ -49,17 +49,17 @@
         </nav>
         <div>
             <div class="commDiv">
-                <p><code>calcule-lançamento</code> - Calcula o valor de recompensa de lançamentos individuais. <a onclick="scr('cmd01')">Ver mais</a></p>
+                <p><code>pagar-lançamento</code> - Concluí um lançamento para a agência selecionada. <a onclick="scr('cmd01')">Ver mais</a></p>
             </div>
         </div>
         <div>
             <div class="commDiv">
-                <p><code>calcule-missão</code> - Calcula o valor de recompensa de cumprimento de missão. <a onclick="scr('cmd02')">Ver mais</a></p>
+                <p><code>pagar-missão</code> - Concluí uma missão para a agência selecionada. <a onclick="scr('cmd02')">Ver mais</a></p>
             </div>
         </div>
         <div>
             <div class="commDiv">
-                <p><code>calcule-criador</code> - Calcula o valor da recompensa dada aos criadores de missão. <a onclick="scr('cmd03')">Ver mais</a></p>
+                <p><code>pagar-criador</code> - Faz um pagamento da recompensa dada aos criadores de missão. <a onclick="scr('cmd03')">Ver mais</a></p>
             </div>
         </div>
         <div>
@@ -127,6 +127,31 @@
                 <p><code>remover-agência</code> - Remove permanentemente a agência do usuário.<a onclick="scr('cmd16')">Ver mais</a></p>
             </div>
         </div>
+        <div>
+            <div class="commDiv">
+                <p><code>registros</code> - Mostra os últimos dez registros de acontecimentos da agência.<a onclick="scr('cmd17')">Ver mais</a></p>
+            </div>
+        </div>
+        <div>
+            <div class="commDiv">
+                <p><code>pesquisar</code> - Faz um investimento em um determinado número de pacotes de pesquisa.<a onclick="scr('cmd18')">Ver mais</a></p>
+            </div>
+        </div>
+        <div>
+            <div class="commDiv">
+                <p><code>atualizar</code> - Avança para o próximo nível a agência do usuário.<a onclick="scr('cmd19')">Ver mais</a></p>
+            </div>
+        </div>
+        <div>
+            <div class="commDiv">
+                <p><code>remover-dinheiro</code> - Remove dinheiro da agência do usuário selecionado.<a onclick="scr('cmd20')">Ver mais</a></p>
+            </div>
+        </div>
+        <div>
+            <div class="commDiv">
+                <p><code>adicionar-dinheiro</code> - Adiciona dinheiro para agência do usuário selecionado.<a onclick="scr('cmd21')">Ver mais</a></p>
+            </div>
+        </div>
     </section>
     <section id="last">
         <nav>
@@ -134,25 +159,25 @@
         </nav>
         <div>
             <div id="cmd01" class="commDiv">
-                <p>Sintaxe: <code>calcule-lançamento [massa] [reutilizável(s/n)] [dificuldade(1 a 6)]</code></p>
-                <p>Exemplo de uso: <code>calcule-lançamento 578.83 s 3</code></p>
-                <p class="description">Descrição: Calcula o valor de recompensa de lançamentos individuais.</p>
+                <p>Sintaxe: <code>pagar-lançamento [usuário] [massa] [reutilizável(s/n)] [dificuldade(1 a 6)]</code></p>
+                <p>Exemplo de uso: <code>pagar-lançamento @RP-Manager 578.83 s 3</code></p>
+                <p class="description">Descrição: Concluí um lançamento para a agência selecionada.</p>
                 <p>Nível de permissão de servidor requerido: 1</p>
             </div>
         </div>
         <div>
             <div id="cmd02" class="commDiv">
-                <p>Sintaxe: <code>calcule-missão [massa] [reutilizável(s/n)] [dificuldade(1 a 6)]</code></p>
-                <p>Exemplo de uso: <code>calcule-lançamento 433.71 s 1</code></p>
-                <p class="description">Descrição: Calcula o valor de recompensa de cumprimento de missão.</p>
+                <p>Sintaxe: <code>pagar-missão [usuário] [massa] [reutilizável(s/n)] [dificuldade(1 a 6)]</code></p>
+                <p>Exemplo de uso: <code>pagar-lançamento @RP-Manager 433.71 s 1</code></p>
+                <p class="description">Descrição: Concluí uma missão para a agência selecionada.</p>
                 <p>Nível de permissão de servidor requerido: 1</p>
             </div>
         </div>
         <div>
             <div id="cmd03" class="commDiv">
-                <p>Sintaxe: <code>calcule-criador [número de concluintes] [dificuldade(1 a 6)]</code></p>
-                <p>Exemplo de uso: <code>calcule-criador 3 2</code></p>
-                <p class="description">Descrição: Calcula o valor da recompensa dada aos criadores de missão.</p>
+                <p>Sintaxe: <code>pagar-criador [usuário] [número de concluíntes] [dificuldade(1 a 6)]</code></p>
+                <p>Exemplo de uso: <code>calcule-criador @RP-Manager 3 2</code></p>
+                <p class="description">Descrição: Faz um pagamento da recompensa dada aos criadores de missão.</p>
                 <p>Nível de permissão de servidor requerido: 1</p>
             </div>
         </div>
@@ -174,7 +199,7 @@
         </div>
         <div>
             <div id="cmd06" class="commDiv">
-                <p>Sintaxe: <code>remover-nível [número do nível]</code></p>
+                <p>Sintaxe: <code>remover-nível [nível]</code></p>
                 <p>Exemplo de uso: <code>remover-nível 3</code></p>
                 <p class="description">Descrição: Remove o nível selecionado e redefine a ordem dos subsequentes.</p>
                 <p>Nível de permissão de servidor requerido: 1</p>
@@ -222,15 +247,15 @@
         </div>
         <div>
             <div id="cmd12" class="commDiv">
-                <p>Sintaxe: <code>definir-canal-missões [ID do canal]</code></p>
-                <p>Exemplo de uso: <code>definir-canal-missões 704000741915754530</code></p>
+                <p>Sintaxe: <code>definir-canal-missões [canal]</code></p>
+                <p>Exemplo de uso: <code>definir-canal-missões #missões</code></p>
                 <p class="description">Descrição: Define o canal onde serão postadas as missões.</p>
                 <p>Nível de permissão de servidor requerido: 2</p>
             </div>
         </div>
         <div>
             <div id="cmd13" class="commDiv">
-                <p>Sintaxe: <code>definir-cargo-gerenciador [nome do cargo]</code></p>
+                <p>Sintaxe: <code>definir-cargo-gerenciador @Administrador</code></p>
                 <p>Exemplo de uso: <code>definir-cargo-gerenciador Administrador</code></p>
                 <p class="description">Descrição: Define o cargo que pode usar alguns comandos específicos.</p>
                 <p>Nível de permissão de servidor requerido: 2</p>
@@ -246,8 +271,8 @@
         </div>
         <div>
             <div id="cmd15" class="commDiv">
-                <p>Sintaxe: <code>agência</code></p>
-                <p>Exemplo de uso: <code>agência</code> (não necessita de argumentos)</p>
+                <p>Sintaxe: <code>agência (usuário)</code></p>
+                <p>Exemplo de uso: <code>agência @RP-Manager</code> (não necessita de argumentos)</p>
                 <p class="description">Mostra informações sobre a agência do usuário.</p>
                 <p>Nível de permissão de servidor requerido: 2</p>
             </div>
@@ -256,7 +281,47 @@
             <div id="cmd16" class="commDiv">
                 <p>Sintaxe: <code>remover-agência [confirmar remoção]</code></p>
                 <p>Exemplo de uso: <code>remover-agência confirmar remoção</code></p>
-                <p class="description">Descrição: Remove permanentemente a agência do usuário..</p>
+                <p class="description">Descrição: Remove permanentemente a agência do usuário.</p>
+                <p>Nível de permissão de servidor requerido: 2</p>
+            </div>
+        </div>
+        <div>
+            <div id="cmd17" class="commDiv">
+                <p>Sintaxe: <code>registros</code></p>
+                <p>Exemplo de uso: <code>registros</code> (não necessita de argumentos)</p>
+                <p class="description">Descrição: Mostra os últimos dez registros de acontecimentos da agência.</p>
+                <p>Nível de permissão de servidor requerido: 2</p>
+            </div>
+        </div>
+        <div>
+            <div id="cmd18" class="commDiv">
+                <p>Sintaxe: <code>pesquisar [número de pacotes de pesquisas]</code></p>
+                <p>Exemplo de uso: <code>pesquisar 5</code></p>
+                <p class="description">Descrição:Faz um investimento em um determinado número de pacotes de pesquisa.</p>
+                <p>Nível de permissão de servidor requerido: 2</p>
+            </div>
+        </div>
+        <div>
+            <div id="cmd19" class="commDiv">
+                <p>Sintaxe: <code>atualizar</code></p>
+                <p>Exemplo de uso: <code>atualizar</code> (não necessita de argumentos)</p>
+                <p class="description">Descrição: Avança para o próximo nível a agência do usuário.</p>
+                <p>Nível de permissão de servidor requerido: 2</p>
+            </div>
+        </div>
+        <div>
+            <div id="cmd20" class="commDiv">
+                <p>Sintaxe: <code>remover-dinheiro [usuário] [quantidade]</code></p>
+                <p>Exemplo de uso: <code>remover-dinheiro @RP-Manager 10000</code></p>
+                <p class="description">Remove dinheiro da agência do usuário selecionado.</p>
+                <p>Nível de permissão de servidor requerido: 2</p>
+            </div>
+        </div>
+        <div>
+            <div id="cmd21" class="commDiv">
+                <p>Sintaxe: <code>adicionar-dinheiro [usuário] [quantidade]</code></p>
+                <p>Exemplo de uso: <code>adicionar-dinheiro @RP-Manager 10000</code></p>
+                <p class="description">Descrição: Adiciona dinheiro para agência do usuário selecionado.</p>
                 <p>Nível de permissão de servidor requerido: 2</p>
             </div>
         </div>

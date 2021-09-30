@@ -99,7 +99,7 @@ a:visited{
 .thisOne{
     color: #00aff4!important;
 }
-@media only screen and (max-device-width: 1100px){
+@media only screen and (max-device-width: 1200px){
     section{
         width: 90%;
     }
@@ -109,6 +109,24 @@ a:visited{
     .commDiv a{
         text-align: center;
         float: none;
+    }
+}
+@media only screen and (max-device-width: 460px){
+    .button{
+        font-size: 16px;
+        background-color: #3c4baa;
+        padding: 15px;
+        margin-right: 10px;
+        border-radius: 10px;
+    }
+}
+@media only screen and (max-device-width: 390px){
+    .button{
+        font-size: 14px;
+        background-color: #3c4baa;
+        padding: 12px;
+        margin-right: 10px;
+        border-radius: 10px;
     }
 }
 @media only screen and (max-device-width: 600px){
