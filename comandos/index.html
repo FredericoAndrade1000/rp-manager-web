@@ -152,6 +152,16 @@
                 <p><code>adicionar-dinheiro</code> - Adiciona dinheiro para agência do usuário selecionado.<a onclick="scr('cmd21')">Ver mais</a></p>
             </div>
         </div>
+        <div>
+            <div class="commDiv">
+                <p><code>pagar</code> - Transfere dinheiro para agência do usuário selecionado.<a onclick="scr('cmd22')">Ver mais</a></p>
+            </div>
+        </div>
+        <div>
+            <div class="commDiv">
+                <p><code>top</code> - Mostra as dez melhores agências do índice por dinheiro.<a onclick="scr('cmd22')">Ver mais</a></p>
+            </div>
+        </div>
     </section>
     <section id="last">
         <nav>
@@ -218,7 +228,7 @@
                 <p>Sintaxe: <code>adicionar-missão [título] & [descrição] & [objetivo] & [nível] & [notas] & [proibições] & [prazo de entrega]</code></p>
                 <p>Exemplo de uso: <code>adicionar-missão Sputnik-1 & Depois de se ver perdendo espaço em uma disputa, o governo da URSS quer enviar algo para o espaço & Lance um satélite que represente a Sputnik-1 na órbita da Terra & 1 & O foguete deve se parecer com o Semiorka & Uso de Cheats ou edições dos arquivos do jogo & 04/10/2021</code></p>
                 <p class="description">Descrição: Cria uma nova missão. Use "&" para separar argumentos.</p>
-                <p>Nível de permissão de servidor requerido: 2</p>
+                <p>Nível de permissão de servidor requerido: 1</p>
             </div>
         </div>
         <div>
@@ -226,7 +236,7 @@
                 <p>Sintaxe: <code>mostrar-missões</code></p>
                 <p>Exemplo de uso: <code>mostrar-missões</code> (não necessita de argumentos)</p>
                 <p class="description">Descrição: Mostra todas as missões criadas.</p>
-                <p>Nível de permissão de servidor requerido: 2</p>
+                <p>Nível de permissão de servidor requerido: 1</p>
             </div>
         </div>
         <div>
@@ -234,7 +244,7 @@
                 <p>Sintaxe: <code>remover-missão [número da missão]</code></p>
                 <p>Exemplo de uso: <code>remover-missão 5</code></p>
                 <p class="description">Descrição: Remove a missão selecionada e redefine a ordem das missões subsequentes.</p>
-                <p>Nível de permissão de servidor requerido: 2</p>
+                <p>Nível de permissão de servidor requerido: 1</p>
             </div>
         </div>
         <div>
@@ -242,7 +252,7 @@
                 <p>Sintaxe: <code>postar-missão [número da missão]</code></p>
                 <p>Exemplo de uso: <code>postar-missão 2</code></p>
                 <p class="description">Descrição: Posta no canal definido a missão selecionada.</p>
-                <p>Nível de permissão de servidor requerido: 2</p>
+                <p>Nível de permissão de servidor requerido: 1</p>
             </div>
         </div>
         <div>
@@ -250,7 +260,7 @@
                 <p>Sintaxe: <code>definir-canal-missões [canal]</code></p>
                 <p>Exemplo de uso: <code>definir-canal-missões #missões</code></p>
                 <p class="description">Descrição: Define o canal onde serão postadas as missões.</p>
-                <p>Nível de permissão de servidor requerido: 2</p>
+                <p>Nível de permissão de servidor requerido: 1</p>
             </div>
         </div>
         <div>
@@ -258,7 +268,7 @@
                 <p>Sintaxe: <code>definir-cargo-gerenciador @Administrador</code></p>
                 <p>Exemplo de uso: <code>definir-cargo-gerenciador Administrador</code></p>
                 <p class="description">Descrição: Define o cargo que pode usar alguns comandos específicos.</p>
-                <p>Nível de permissão de servidor requerido: 2</p>
+                <p>Nível de permissão de servidor requerido: 1</p>
             </div>
         </div>
         <div>
@@ -266,7 +276,7 @@
                 <p>Sintaxe: <code>registrar-agência [nome] & [descrição]</code></p>
                 <p>Exemplo de uso: <code>registrar-agência Red Shift Nebular & Sempre fazendo um "desvio"</code></p>
                 <p class="description">Descrição: Registra uma agência para o usuário. Use & para separar argumentos.</p>
-                <p>Nível de permissão de servidor requerido: 2</p>
+                <p>Nível de permissão de servidor requerido: 1</p>
             </div>
         </div>
         <div>
@@ -274,7 +284,7 @@
                 <p>Sintaxe: <code>agência (usuário)</code></p>
                 <p>Exemplo de uso: <code>agência @RP-Manager</code> (não necessita de argumentos)</p>
                 <p class="description">Mostra informações sobre a agência do usuário.</p>
-                <p>Nível de permissão de servidor requerido: 2</p>
+                <p>Nível de permissão de servidor requerido: 1</p>
             </div>
         </div>
         <div>
@@ -282,7 +292,7 @@
                 <p>Sintaxe: <code>remover-agência [confirmar remoção]</code></p>
                 <p>Exemplo de uso: <code>remover-agência confirmar remoção</code></p>
                 <p class="description">Descrição: Remove permanentemente a agência do usuário.</p>
-                <p>Nível de permissão de servidor requerido: 2</p>
+                <p>Nível de permissão de servidor requerido: 1</p>
             </div>
         </div>
         <div>
@@ -290,7 +300,7 @@
                 <p>Sintaxe: <code>registros</code></p>
                 <p>Exemplo de uso: <code>registros</code> (não necessita de argumentos)</p>
                 <p class="description">Descrição: Mostra os últimos dez registros de acontecimentos da agência.</p>
-                <p>Nível de permissão de servidor requerido: 2</p>
+                <p>Nível de permissão de servidor requerido: 1</p>
             </div>
         </div>
         <div>
@@ -298,7 +308,7 @@
                 <p>Sintaxe: <code>pesquisar [número de pacotes de pesquisas]</code></p>
                 <p>Exemplo de uso: <code>pesquisar 5</code></p>
                 <p class="description">Descrição:Faz um investimento em um determinado número de pacotes de pesquisa.</p>
-                <p>Nível de permissão de servidor requerido: 2</p>
+                <p>Nível de permissão de servidor requerido: 1</p>
             </div>
         </div>
         <div>
@@ -306,7 +316,7 @@
                 <p>Sintaxe: <code>atualizar</code></p>
                 <p>Exemplo de uso: <code>atualizar</code> (não necessita de argumentos)</p>
                 <p class="description">Descrição: Avança para o próximo nível a agência do usuário.</p>
-                <p>Nível de permissão de servidor requerido: 2</p>
+                <p>Nível de permissão de servidor requerido: 1</p>
             </div>
         </div>
         <div>
@@ -314,7 +324,7 @@
                 <p>Sintaxe: <code>remover-dinheiro [usuário] [quantidade]</code></p>
                 <p>Exemplo de uso: <code>remover-dinheiro @RP-Manager 10000</code></p>
                 <p class="description">Remove dinheiro da agência do usuário selecionado.</p>
-                <p>Nível de permissão de servidor requerido: 2</p>
+                <p>Nível de permissão de servidor requerido: 1</p>
             </div>
         </div>
         <div>
@@ -322,7 +332,23 @@
                 <p>Sintaxe: <code>adicionar-dinheiro [usuário] [quantidade]</code></p>
                 <p>Exemplo de uso: <code>adicionar-dinheiro @RP-Manager 10000</code></p>
                 <p class="description">Descrição: Adiciona dinheiro para agência do usuário selecionado.</p>
-                <p>Nível de permissão de servidor requerido: 2</p>
+                <p>Nível de permissão de servidor requerido: 1</p>
+            </div>
+        </div>
+        <div>
+            <div id="cmd22" class="commDiv">
+                <p>Sintaxe: <code>pagar [usuário] [quantidade]</code></p>
+                <p>Exemplo de uso: <code>pagar @RP-Manager 10000</code></p>
+                <p class="description">Descrição: Transfere dinheiro para agência do usuário selecionado.</p>
+                <p>Nível de permissão de servidor requerido: 1</p>
+            </div>
+        </div>
+        <div>
+            <div id="cmd22" class="commDiv">
+                <p>Sintaxe: <code>top (página)</code></p>
+                <p>Exemplo de uso: <code>top 2</code></p>
+                <p class="description">Descrição: Mostra as dez melhores agências do índice por dinheiro.</p>
+                <p>Nível de permissão de servidor requerido: 1</p>
             </div>
         </div>
     </section>
