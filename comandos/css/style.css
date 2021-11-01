@@ -85,7 +85,7 @@ a:visited{
     -ms-transition: background-color 2s;
     transition: background-color 2s;
 }
-#last{
+.last{
     margin-bottom: 100px;
 }
 .navButton:hover{
